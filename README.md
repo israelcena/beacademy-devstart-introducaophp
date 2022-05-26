@@ -1,6 +1,8 @@
 # Exercícios php
 
-### Rodando o programa
+- [Exercício 1](./public/exercicio1.php)
+
+## Rodando os exercícios localmente
 
 Para rodar o Projeto em um ambiente dockerizado, utilize o comando:
 
