@@ -8,4 +8,5 @@ echo "<li><a href=\"./match.php\">Match</a></li>";
 echo "<li><a href=\"./arrays.php\">Arrays</a></li>";
 echo "<li><a href=\"./bandas.php\">Bandas</a></li>";
 echo "<li><a href=\"./alunos.php\">Alunos</a></li>";
+echo "<li><a href=\"./dados.php\">Dados</a></li>";
 echo "</ol>";
