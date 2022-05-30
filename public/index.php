@@ -9,4 +9,5 @@ echo "<li><a href=\"./arrays.php\">Arrays</a></li>";
 echo "<li><a href=\"./bandas.php\">Bandas</a></li>";
 echo "<li><a href=\"./alunos.php\">Alunos</a></li>";
 echo "<li><a href=\"./dados.php\">Dados</a></li>";
+echo "<li><a href=\"./produtos.php\">Produtos</a></li>";
 echo "</ol>";
