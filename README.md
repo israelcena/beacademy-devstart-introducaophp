@@ -2,6 +2,7 @@
 
 - [Exercício 1](./public/exercicio1.php)
 - [Exercício 2](./public/exercicio2.php)
+- [Exercício 3](./public/exercicio3.php)
 
 ## Rodando os exercícios localmente
 
