@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-function somar(int $a1, int $a2)
+function somar(int $a1, int $a2): int
 {
   return $a1 + $a2;
 };
 
-function welcome(string $nome)
+function welcome(string $nome): string
 {
   return "Bem Vindo {$nome}";
 };
