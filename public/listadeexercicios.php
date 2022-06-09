@@ -18,4 +18,5 @@ echo "<li><a href=\"./functions.php\">Functions</a></li>";
 echo "<li><a href=\"./tipos.php\">Tipos</a></li>";
 echo "<li><a href=\"./funcao-array.php\">Arrays</a></li>";
 echo "<li><a href=\"./media.php\">Média das Notas</a></li>";
+echo "<li><a href=\"./strings.php\">Funções com string</a></li>";
 echo "</ol>";
