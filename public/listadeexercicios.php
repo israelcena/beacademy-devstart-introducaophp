@@ -16,4 +16,5 @@ echo "<li><a href=\"./uri.php\">uri</a></li>";
 echo "<li><a href=\"telas/index.php\">login</a></li>";
 echo "<li><a href=\"./functions.php\">Functions</a></li>";
 echo "<li><a href=\"./tipos.php\">Tipos</a></li>";
+echo "<li><a href=\"./funcao-array.php\">Arrays</a></li>";
 echo "</ol>";
