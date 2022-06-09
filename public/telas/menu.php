@@ -17,16 +17,16 @@
                                         $noactive = "class=\"nav-link\"";
                                         echo ($_SERVER['REQUEST_URI'] == "/") ? $active : $noactive;
                                         ?>>Home</a></li>
-      <li class="nav-item"><a href="/sobre" <?php
-                                            $active = "class=\"nav-link active\" aria-current=\"page\"";
-                                            $noactive = "class=\"nav-link\"";
-                                            echo ($_SERVER['REQUEST_URI'] == "/sobre") ? $active : $noactive;
-                                            ?>>Sobre</a></li>
-      <li class="nav-item"><a href="/contato" <?php
+      <li class="nav-item"><a href="/listar" <?php
                                               $active = "class=\"nav-link active\" aria-current=\"page\"";
                                               $noactive = "class=\"nav-link\"";
-                                              echo ($_SERVER['REQUEST_URI'] == "/contato") ? $active : $noactive;
-                                              ?>>Contato</a></li>
+                                              echo ($_SERVER['REQUEST_URI'] == "/listar") ? $active : $noactive;
+                                              ?>>Listar</a></li>
+      <li class="nav-item"><a href="/cadastro" <?php
+                                                $active = "class=\"nav-link active\" aria-current=\"page\"";
+                                                $noactive = "class=\"nav-link\"";
+                                                echo ($_SERVER['REQUEST_URI'] == "/cadastro") ? $active : $noactive;
+                                                ?>>Cadastro</a></li>
       <li class="nav-item"><a href="/login" <?php
                                             $active = "class=\"nav-link active\" aria-current=\"page\"";
                                             $noactive = "class=\"nav-link\"";
