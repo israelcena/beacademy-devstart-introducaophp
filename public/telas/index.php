@@ -1,12 +1,14 @@
 <?php
 $url = $_SERVER['REQUEST_URI'];
-include 'telas/menu.php';
+include '/app/public/telas/menu.php';
+
+echo $url;
 
 match ($url) {
-  '/' => include 'telas/home.php',
-  '/sobre' => include 'telas/sobre.php',
-  '/contato' => include 'telas/contato.php',
-  '/login' => include 'telas/login.php',
-  default => include 'telas/404.php',
+  '/index' => include '/app/public/telas/home.php',
+  '/sobre' => include '/app/public/telas/sobre.php',
+  '/contato' => include '/app/public/telas/contato.php',
+  '/login' => include '/app/public/telas/login.php',
+  default => include '/app/public/telas/404.php',
 };
 include 'telas/footer.php';
