@@ -17,6 +17,7 @@ function home()
 
 function listar()
 {
+  $contatos = file('/app/public/telas/dados/contatos.csv');
   include "/app/public/telas/listar.php";
 }
 
