@@ -2,7 +2,14 @@
 
 function cadastro()
 {
-  include "/app/public/telas/cadastro.php";
+  if ($_POST) {
+    $arquivo = fopen("/app/public/telas/dados/contatos.csv", "a+");
+    fwrite($arquivo, "{$_POST["nome"]},{$_POST["email"]},{$_POST["telefone"]}" . PHP_EOL);
+    fclose($arquivo);
+    echo "<center>Cadastro Realizado Com Sucesso!</center>";
+  } else {
+    include "/app/public/telas/cadastro.php";
+  }
 }
 
 function login()
