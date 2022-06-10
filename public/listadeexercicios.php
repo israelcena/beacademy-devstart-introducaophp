@@ -19,4 +19,5 @@ echo "<li><a href=\"./tipos.php\">Tipos</a></li>";
 echo "<li><a href=\"./funcao-array.php\">Arrays</a></li>";
 echo "<li><a href=\"./media.php\">Média das Notas</a></li>";
 echo "<li><a href=\"./strings.php\">Funções com string</a></li>";
+echo "<li><a href=\"./argon2.php\">Criptografia com Argon2</a></li>";
 echo "</ol>";
