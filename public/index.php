@@ -1,13 +1,14 @@
 <?php
-$url = $_SERVER['REQUEST_URI'];
+$url = explode("?", $_SERVER['REQUEST_URI']);
 include '/app/public/telas/menu.php';
 include "./telas/acoes.php";
 
-match ($url) {
+match ($url[0]) {
   '/' => include home(),
   '/login' => include login(),
   '/listar' => include listar(),
   '/cadastro' => include cadastro(),
+  '/excluir' => include excluir(),
   default => include naoEncontrado(),
 };
 include 'telas/footer.php';

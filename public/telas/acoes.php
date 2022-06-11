@@ -33,3 +33,22 @@ function naoEncontrado()
 {
   include "/app/public/telas/404.php";
 }
+
+function excluir()
+{
+  $localFile = '/app/public/telas/dados/contatos.csv';
+  $contatos = file($localFile);
+
+  unset($contatos[$_GET['id']]);
+
+  unlink($localFile);
+
+  $arquivo = fopen($localFile, 'a+');
+
+  foreach ($contatos as $contato) {
+    fwrite($arquivo, $contato);
+  }
+
+  $mensagem = "Contato Excluido com Sucesso!";
+  include "/app/public/telas/mensagem.php";
+}
