@@ -12,7 +12,15 @@
     <?php
     foreach ($contatos as $i => $contato) {
       $partes = explode(",", $contato);
-      echo "<tr><td scope=\"row\">{$partes[0]}</td><td scope=\"row\">{$partes[1]}</td><td scope=\"row\">{$partes[2]}</td><td scope=\"row\"><a class=\"btn btn-danger btn-sm\" href=\"/excluir?id={$i}\">Excluir<a></td></tr>";
+      echo "<tr>
+              <td scope=\"row\">{$partes[0]}</td>
+              <td scope=\"row\">{$partes[1]}</td>
+              <td scope=\"row\">{$partes[2]}</td>
+              <td scope=\"row\">
+              <a class=\"btn btn-primary btn-sm\" href=\"/editar?id={$i}\">Editar<a>
+              <a class=\"btn btn-danger btn-sm\" href=\"/excluir?id={$i}\">Excluir<a>
+              </td>
+            </tr>";
     }
     ?>
   </tbody>

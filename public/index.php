@@ -9,6 +9,7 @@ match ($url[0]) {
   '/listar' => include listar(),
   '/cadastro' => include cadastro(),
   '/excluir' => include excluir(),
+  '/editar' => include editar(),
   default => include naoEncontrado(),
 };
 include 'telas/footer.php';

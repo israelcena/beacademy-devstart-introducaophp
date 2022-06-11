@@ -48,7 +48,31 @@ function excluir()
   foreach ($contatos as $contato) {
     fwrite($arquivo, $contato);
   }
+  fclose($arquivo);
 
   $mensagem = "Contato Excluido com Sucesso!";
   include "/app/public/telas/mensagem.php";
+}
+
+function editar()
+{
+  $localFile = '/app/public/telas/dados/contatos.csv';
+  $contatos = file($localFile);
+  $dados = explode(",", $contatos[$_GET['id']]);
+  include "/app/public/telas/editar.php";
+  
+  if ($_POST) {
+    $contatos[$_GET['id']] = "{$_POST["nome"]},{$_POST["email"]},{$_POST["telefone"]}" . PHP_EOL;
+
+    unlink($localFile);
+    $arquivo = fopen($localFile, 'a+');
+    foreach ($contatos as $contato) {
+      fwrite($arquivo, $contato);
+    }
+    fclose($arquivo);
+
+    $mensagem = "Cadastro Editado Com Sucesso!";
+    include "/app/public/telas/mensagem.php";
+  }
+  
 }
